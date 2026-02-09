@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Identity Cipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Identity Cipher</h2>
+
+    <label>Full Name</label>
+    <input type="text" id="fullname" placeholder="Enter full name">
+
+    <div class="row">
+    <div>
+        <label>Year Level</label>
+        <input type="text" id="year" placeholder="3rd year">
+    </div>
+
+    <div>
+        <label>Course</label>
+        <input type="text" id="course" placeholder="BSIT">
+    </div>
+</div>
+
+    <label for="key">Key (1–25)</label>
+    <input type="number" id="key" min="1" max="25" value="3">
+
+    <div class="buttons">
+        <button onclick="encryptText()">Encrypt</button>
+        <button onclick="decryptText()">Decrypt</button>
+        <button onclick="clearFields()">Clear</button>
+    </div>
+
+    <label for="plaintext">Combined Plaintext</label>
+<textarea id="plaintext" readonly></textarea>
+
+<label for="output">Output</label>
+<textarea id="output" readonly></textarea>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
